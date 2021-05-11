@@ -1,26 +1,5 @@
-# function [delta_est, phi_est] = keren(im)
-# % KEREN - estimate shift and rotation parameters using Keren et al. algorithm
-# %    [delta_est, phi_est] = keren(im)
-
-# %% -----------------------------------------------------------------------
-# % SUPERRESOLUTION - Graphical User Interface for Super-Resolution Imaging
-# % Copyright (C) 2005-2007 Laboratory of Audiovisual Communications (LCAV), 
-# % Ecole Polytechnique Federale de Lausanne (EPFL), 
-# % CH-1015 Lausanne, Switzerland 
-# % 
-# % This program is free software; you can redistribute it and/or modify it 
-# % under the terms of the GNU General Public License as published by the 
-# % Free Software Foundation; either version 2 of the License, or (at your 
-# % option) any later version. This software is distributed in the hope that 
-# % it will be useful, but without any warranty; without even the implied 
-# % warranty of merchantability or fitness for a particular purpose. 
-# % See the GNU General Public License for more details 
-# % (enclosed in the file GPL). 
-# %
-# % Latest modifications: January 12, 2006, by Patrick Vandewalle
-# %                       February 2, 2006, by Patrick Vandewalle
-# %                          removed bug in implementation
-# %                       August 22, 2006, by Karim Krichane
+# implementation of the article "Image Sequence Enhancement Using Sub Pixel Displacements" 
+# implemented by Shlomi Amitai. based on the matlab implementation by LCAV.
 
 import numpy as np
 import cv2
