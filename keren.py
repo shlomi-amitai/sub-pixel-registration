@@ -36,7 +36,7 @@ def keren(imlist):
             m, n= im0[i-1].shape
             im0.append(cv2.resize(scipy.signal.convolve2d(im0[i-1],lp,'same'), (m//2, n//2), interpolation = cv2.INTER_CUBIC))
             im1.append(cv2.resize(scipy.signal.convolve2d(im1[i-1],lp,'same'), (m//2, n//2), interpolation = cv2.INTER_CUBIC))
-    #     end
+    
         
         stot = np.array([0,0,0], dtype=np.float)
     #     % do actual registration, based on pyramid
